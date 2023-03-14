@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless/style.css">
+    <script src="https://kit.fontawesome.com/38d9005560.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/img2.PNG" class="logo">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">porfilo</a></li>
+                    <li><a href="#">contact</a></li> 
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                
+            </div>
+        </div>       
+    </div>
+
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="abt-col-1">
+                    <img src="images/img3.jpg">
+                </div>
+                <div class="abt-col-2">
+                    <h1>about Me</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only fivecenturies, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                    <div class="tab-titles">
+                       <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                       <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                       <p class="tab-links" onclick="opentab('education')">Education</p> 
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Deign training at ET institute</li>
+                            <li><span>web development</span><br>WebApp development</li>
+                            <li><span>App development</span><br>building using android/java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-current</span><br>Deign training at ET institute</li>
+                            <li><span>2019-2021</span><br>WebApp development teamlead</li>
+                            <li><span>2017-2019</span><br>building using android/java exe digital ltd</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX at ET institute</li>
+                            <li><span>2014</span><br>MBA FROM MIT bangalore</li>
+                            <li><span>2016</span><br>MCA from ISM bangalore</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitles">My services</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>Web Design</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <h2>UI/UX</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <h2>Python</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="subtitles">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/img4.jfif">
+                        <div class="layer">
+                            <h3>Social media App</h3>
+                            <p>Download the perfect cell phone pictures.
+                               Free for commercial use ✓ No attribution required</p>
+                               <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i>
+                               </a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/img5.jfif">
+                        <div class="layer">
+                            <h3>Social media App</h3>
+                            <p>Download the perfect cell phone pictures.
+                               Free for commercial use ✓ No attribution required</p>
+                               <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                               </a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/img6.jpeg">
+                        <div class="layer">
+                            <h3>Social media App</h3>
+                            <p>Download the perfect cell phone pictures.
+                               Free for commercial use ✓ No attribution required</p>
+                               <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                               </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
